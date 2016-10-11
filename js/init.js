@@ -146,14 +146,16 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      var data = {'contactName': contactName,
+                  'contactEmail': contactEmail,
+                  'contactSubject': contactSubject,
+                  'contactMessage': contactMessage}
 
       $.ajax({
-
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
+	      method: "POST",
+	      url: "https://formspree.io/vhiremath95+form@gmail.com",
+	      data: data.serialize(),
+        dataType: 'json',
 	      success: function(msg) {
 
             // Message was sent
@@ -161,7 +163,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -178,11 +180,3 @@
 
 
 });
-
-
-
-
-
-
-
-
