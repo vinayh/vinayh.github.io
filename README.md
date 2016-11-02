@@ -1,2 +1,3 @@
 # vinayh.github.io
-Personal webpage
+* My personal webpage
+* Currently publicly viewable at https://vinayh.com
