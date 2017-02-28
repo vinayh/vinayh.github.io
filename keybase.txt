@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/vinayh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://vinayh.com
+  * I am vinayh (https://keybase.io/vinayh) on keybase.
+  * I have a public key with fingerprint 021A FEA9 0E73 5DFA C443  AB89 AF3A 6359 1FA7 B9A3
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017474533cdc44d32e61e18abe5da26637d81496d658c1d4ae67875eae1b4a59eb0a",
+            "fingerprint": "021afea90e735dfac443ab89af3a63591fa7b9a3",
+            "host": "keybase.io",
+            "key_id": "af3a63591fa7b9a3",
+            "kid": "01017474533cdc44d32e61e18abe5da26637d81496d658c1d4ae67875eae1b4a59eb0a",
+            "uid": "8b34dde424c39dd962249d9d54428c19",
+            "username": "vinayh"
+        },
+        "service": {
+            "hostname": "vinayh.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1488312826,
+    "expire_in": 157680000,
+    "prev": "ea692b4704af6a4dfabf9b6b6a55a34338f7750aaa8898d7b521e746884fd706",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUm1QVFUYXhB0gRQNY1Tk684yqCDsvffcry0kFEfZFAmaQgrXc/eeC3dgP9i9
+LF+BEtMMDkOUgUNFBIOmJo6gEvGVIQwTFJnFmMaHWqaQDjY4aBIy3cvkj2b62flz
+5jzneZ73ed95312+RKN1O2Mw7w0+3tHk9s0Ur0ltu/akCONtQgFmKMKy0OKFsgXk
+lE1ZkoAZMD2uxxnAAIokzYIZAIEkEI0jnIU8ogRI0DTJCCwOOFqgKdaMCwAimmEZ
+CkGE8wBSHOL1EIvERMmagRx2h2SVVVsChyKCnB4xJCWIUHEmIc9yUCQhTVIcLkKG
+5yCpCDNtTlWhhOOhE0VJNgVTHqbFeP/B/59z5y7asTwJBAEBAphJThA4miAAJ3AC
+BQChqDmV6EQOK7Qghe2SrLAgEyuOxBTMJZmROla1j3/9R5ltFkVnd9hkm9mWreCZ
+smx3GlSdXGBXiXmIN/1jYeIlq6DMUFG4kMMp2ayYAVeYZllSPXHAsiROsAQdiaF8
+u+RAJkllUAzN6pWj1kEuxRJBmiN4wOgBfEWkIVCGz4scT/M0pChIApJkRYah9BBC
+luVYgeEpAkcMoFkWiAKjpzG1qxyrDTNQSk6YoXg6pQwrlHMdCCv2PuROemjctJpA
+/1AP93ULJ1c40+f6t5069HTvPN3VpdN4e618imyZ8Z3XilE9Ae+/4C7PDVtqr2y3
+63bo9l9aubX2RDLf7RjPNy7snfJeY3Rbv31AkxILK5s9BqnBvD91wyGPiPNrPnaJ
+v+2psUws1ZzR25MmoiNvtQ7BhKp1T4R4urwweFnogWsJfRX7GkIegLjp9PiAqvGa
+3p0tkTc8U4vbxlKMm5ecTrvPbjoYnotvjuvK/3k2o/hzXeEln79gzt21+V9gRYeD
+wnKuloyGjmmJm9djwO7nBr7bwAclfLUq/tzZ6KbCxyOXz87Eskx/6a5Nlov3xnG/
+wbeWPmO8PsRMtJSvwIIXzlV13+EnPcBFIe/27IGAIF1H2snq+LpZ/9rJgYq+nsPl
+9t2Xw+8M1aOAxERX64ZOn2Em6cOOj+6aQOPrXxb5BDY2PhBCS6ehM6S9ZW1WV592
+Vf35jbv8Ujk+/Aqf1Jb37SeWh13ys57t1ur+6RiupOJgTePRSu/3lv36ZgTV0N0+
+VV1TerpFkzIfqz22/sZGXuQ96zNLXL0jPX7pEVs0p/xzHuHYa2Un4mytH9Qmd8q3
+yu4fnR97fFt+fs87XtXHjHP7Vyc7fxjuTctuSjW+vPAimxlTOeL6vjnlyDjt+8eP
+rea6zwKjG5YfQeld8CUdceFm474pr3vxo6zn29ZW+tXEnE/zI0hNmG/RhavWbRN1
+nZO/lH092vyG1+/Hf9Kvbg6bezgx8zc=
+=8ZGX
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vinayh
+
+==================================================================
