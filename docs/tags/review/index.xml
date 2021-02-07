@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Hiremath</title>
+    <link>https://vinayh.com/tags/review/</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Feb 2021 23:23:15 +0100</lastBuildDate><atom:link href="https://vinayh.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Book: Submission</title>
+        <link>https://vinayh.com/posts/2021-02-07/</link>
+        <pubDate>Sun, 07 Feb 2021 23:23:15 +0100</pubDate>
+        
+        <guid>https://vinayh.com/posts/2021-02-07/</guid>
+        <description>This is a review of Submission (originally Soumission in French), written by Michel Houellebecq and translated by Lorin Stein. I originally wrote this review on May 2, 2020 immediately after reading the book, when it was posted to Goodreads.
+First of all, I think this book was surprisingly captivating, almost always readable despite a bit of slow going through some of the passages filled with names in French literature I was unfamiliar with.</description>
+      </item>
+    
+      <item>
+        <title>Book: The Righteous Mind</title>
+        <link>https://vinayh.com/posts/2020-03-28/</link>
+        <pubDate>Sat, 28 Mar 2020 23:55:02 +0100</pubDate>
+        
+        <guid>https://vinayh.com/posts/2020-03-28/</guid>
+        <description>Book review: Social intuitionism, moral foundations theory, and other frameworks to better explain and understand the diversity of moral systems that anyone in a democracy must be able to contend with.</description>
+      </item>
+    
+  </channel>
+</rss>

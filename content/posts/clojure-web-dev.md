@@ -4,8 +4,7 @@ date = "2015-07-28T17:02:35-04:00"
 lastmod = "2019-10-12"
 summary = "A tutorial to get beginners to Clojure or web development acquainted with using Compojure and Heroku."
 keywords = []
-title = "Clojure web dev"
-
+title = "Clojure web server tutorial"
 +++
 (This tutorial is INCOMPLETE, but was first given in its complete form as a talk at a Michigan Hackers event on 2015-07-23. See my slides [here](https://github.com/vinayh/clojure-web-talk). I have explained the first portion of the content here in more depth.)
 
