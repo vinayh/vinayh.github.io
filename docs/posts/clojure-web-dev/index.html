@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Hugo 0.80.0">
+<meta name="theme" content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Clojure web dev | Vinay Hiremath</title>
+
+
+<meta name="author" content="Vinay Hiremath">
+
+
+
+<meta name="robots" content="index follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+
+
+
+  
+    <link rel="canonical" href="https://vinayh.com/posts/clojure-web-dev/">
+  
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="Vinay Hiremath">
+<meta property="og:title" content="Clojure web dev">
+
+  <meta property="og:url" content="https://vinayh.com/posts/clojure-web-dev/">
+
+
+
+
+
+
+
+  
+
+
+  <meta property="og:type" content="article">
+  
+  
+    <meta property="article:published_time" content="2015-07-28">
+    <meta property="article:modified_time" content="2019-10-12">
+    <meta property="og:updated_time" content="2019-10-12">
+  
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="theme-color" content="#222">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+    
+
+    
+
+      
+        
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+        
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+        
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+        
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+        
+      
+      
+    
+
+  
+
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+        
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+    
+    
+
+    
+
+      
+      
+    
+
+  
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https:\/\/vinayh.com\/"
+      },
+      "headline": "Clojure web dev",
+      "description": "",
+      
+      "url": "https:\/\/vinayh.com\/posts\/clojure-web-dev\/",
+      "inLanguage": "en",
+      "datePublished": "2015-07-28",
+      "dateModified": "2019-10-12",
+      "wordCount" : "624",
+      "publisher": {
+        "@type": "Person",
+        "name": "Vinay Hiremath"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Vinay Hiremath",
+        
+        "sameAs": ["https://facebook.com/vinay427","https://github.com/vinayh","https://www.instagram.com/vinaythevegan","https://keybase.io/vinayh","https://www.linkedin.com/in/vinayahiremath","https://www.strava.com/athletes/5225140"]
+      }
+    }
+  </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.94583b375b1ec3b702a2914c4dfd825ea4f10e186fd0de7a793a086298f33e4675dd9e3b23745f17f6484e0f15450e007b00a314fdcf11bcbfafdcd15da84033.css" integrity="sha512-lFg7N1sew7cCopFMTf2CXqTxDhhv0N56eToIYpjzPkZ13Z47I3RfF/ZITg8VRQ4AewCjFP3PEby/r9zRXahAMw==">
+
+
+
+<noscript>
+
+  
+  
+
+  
+
+    
+      <meta name="theme-color" content="#225670">
+    
+
+  
+
+  <style>
+  
+    html {
+      --accent: #225670;
+    }
+  
+    .req-js,
+    img.lazyload {
+      display: none;
+    }
+    
+  </style>
+  
+</noscript>
+
+
+
+
+
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff2" as="font" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="me" href="https://facebook.com/vinay427"> 
+
+  <link rel="me" href="https://github.com/vinayh"> 
+
+  <link rel="me" href="https://www.instagram.com/vinaythevegan"> 
+
+  <link rel="me" href="https://keybase.io/vinayh"> 
+
+  <link rel="me" href="https://www.linkedin.com/in/vinayahiremath"> 
+
+  <link rel="me" href="https://www.strava.com/athletes/5225140"> 
+
+
+
+
+
+
+
+  <script>
+    
+      'use strict';const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()};function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
+}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
+}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
+}else{setLight();localStorage.setItem('isDark','false')
+};updateAccent()};document.querySelector('footer button').addEventListener('click',userModeChange)})
+    
+  </script>
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+      
+
+  <a href="/">Vinay Hiremath</a>
+
+
+
+
+  
+    <nav aria-label="Main menu.">
+      <ul>
+        
+          <li>
+            <a class="btn" href="/">Home</a>
+          </li>
+        
+          <li>
+            <a class="btn" href="/posts">Posts</a>
+          </li>
+        
+          <li>
+            <a class="btn" href="/tags">Tags</a>
+          </li>
+        
+          <li>
+            <a class="btn" href="/about">About Me</a>
+          </li>
+        
+          <li>
+            <a class="btn" href="/cv">CV</a>
+          </li>
+        
+      </ul>
+    </nav>
+  
+
+
+    </header>
+
+    <div class="filler">
+      
+
+  <main>
+    <article>
+      <header>
+        
+        <h1>Clojure web dev</h1>
+
+        
+          <section class="terms">
+            <ul><li><a class="btn" href="/tags/tech/">tech</a></li></ul>
+          </section>
+          <p>
+            
+              Last updated on <time datetime="2019-10-12">2019-10-12</time>
+            
+          </p>
+        
+        
+        
+        
+      </header>
+    
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<p>(This tutorial is INCOMPLETE, but was first given in its complete form as a talk at a Michigan Hackers event on 2015-07-23. See my slides <a href="https://github.com/vinayh/clojure-web-talk">here</a>. I have explained the first portion of the content here in more depth.)</p>
+<p>I will start by talking about some basics of Clojure, then move onto explaining the fundamental purpose of a backend in web development, and finish with a demo of a simple web app (with complete code) that you can deploy to Heroku with a one-click button or try out on another platform of your choice.</p>
+
+
+
+
+
+  <h2 id="what-is-clojure-besides-the-best-language-ever"><a class="anchor" href="#what-is-clojure-besides-the-best-language-ever" title='Anchor for "What is Clojure? (besides the best language ever!)".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> What is Clojure? (besides the best language ever!)</h2> 
+
+<ul>
+<li>A dialect of the Lisp language, which means that the syntax uses elegant S-expressions with the code-is-data philosophy</li>
+<li>Based on the Java Virtual Machine, which means that it is quite fast when compiled to Java bytecode and that you can easily integrate other Java libraries or use your Clojure code in a Java codebase</li>
+<li>Strong emphasis on functional programming, which improves your ability to reason about large projects because state is effectively eliminated</li>
+</ul>
+
+
+
+
+
+  <h2 id="tools-you-will-need"><a class="anchor" href="#tools-you-will-need" title='Anchor for "Tools you will need".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Tools you will need</h2> 
+
+<ul>
+<li>Leiningen (for local Clojure development) - <a href="http://leiningen.org">link</a></li>
+<li>Heroku Toolbelt (if you want to deploy to Heroku) - <a href="https://toolbelt.heroku.com/">link</a></li>
+<li>PostgreSQL (for a local database) - <a href="http://www.postgresql.org/download/">link</a></li>
+</ul>
+
+
+
+
+
+  <h2 id="some-basics-of-clojure"><a class="anchor" href="#some-basics-of-clojure" title='Anchor for "Some basics of Clojure".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Some basics of Clojure</h2> 
+
+<p>As mentioned earlier, variables are essentially always immutable in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>my-name <span style="color:#e6db74">&#34;Vinay&#34;</span>)
+</code></pre></div><p>This defines a constant called <code>my-name</code> that refers to the string <code>&quot;Vinay&quot;</code>. The code-is-data philosophy allows for assigning variable names to functions (among many other things)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>my-function (<span style="color:#66d9ef">fn </span>[x] (+ <span style="color:#ae81ff">5</span> x)))
+</code></pre></div><p>This creates a function called <code>my-function</code> that returns the sum of <code>5</code> and a parameter <code>x</code>. Note the prefix notation for arithmetic operations here, which maintains consistent function notation. Think of the <code>+</code> function as being called with two operands, <code>5</code> and <code>x</code>, and returning the resulting sum.</p>
+
+
+
+
+
+  <h2 id="more-basics-of-functions-in-clojure"><a class="anchor" href="#more-basics-of-functions-in-clojure" title='Anchor for "More basics of functions in Clojure".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> More basics of functions in Clojure</h2> 
+
+<p>.Let&rsquo;s simplify the function notation above using the <code>defn</code> macro to express the same thing:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>my-function [x] (+ <span style="color:#ae81ff">5</span> x)
+</code></pre></div><p>Note that to define a function, <code>defn</code> is followed by:</p>
+<ul>
+<li>The function name (eg. <code>my-function</code>)</li>
+<li>The function parameters (eg. <code>x</code>)</li>
+<li>The function implementation (eg <code>(+ 5 x)</code>)</li>
+</ul>
+<p>You can call the function like so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">my-function</span> <span style="color:#ae81ff">4</span>) <span style="color:#75715e">;; Result is 5 + 4 = 9 in this case</span>
+</code></pre></div>
+
+
+
+
+  <h2 id="confused-by-all-of-the-parentheses"><a class="anchor" href="#confused-by-all-of-the-parentheses" title='Anchor for "Confused by all of the parentheses?".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Confused by all of the parentheses?</h2> 
+
+<p>Clojure uses S-expressions to denote nearly every statement as a list. As you probably noticed above, function definitions could be denoted as a list, with the elements: <code>defn</code>, the parameters in a vector (i.e. enclosed by <code>[ ]</code>), and the implementation. Just about everything in Clojure uses this syntax, and another common example is the <code>let</code> form which:</p>
+<ol>
+<li>
+<p>Binds variables to values provided as pairs, eg. <code>[variable_1 value_1 variable_2 value_2]</code></p>
+</li>
+<li>
+<p>Evaluates expressions with this context or scope</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">let </span>[x <span style="color:#ae81ff">1</span>
+      y <span style="color:#ae81ff">2</span>]
+    (+ x y))
+</code></pre></div></li>
+</ol>
+<p>The whole <code>let</code> expression evaluates to the result of the last expression, which in this case is the sum of <code>x = 1</code> and <code>y = 2</code>, so <code>3</code></p>
+
+
+
+
+
+  <h2 id="an-arithmetic-expression"><a class="anchor" href="#an-arithmetic-expression" title='Anchor for "An arithmetic expression".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> An arithmetic expression</h2> 
+
+<p>A benefit of this: no order of operations because the parentheses and prefix notation make things very explicit. Simply evaluate by recursing into every S-expression:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(- (+ <span style="color:#ae81ff">1</span> (/ (* <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>) <span style="color:#ae81ff">4</span>)) <span style="color:#ae81ff">5</span>)
+</code></pre></div><p>The threading macros in Clojure provides a procedural alternative to this with beautiful syntax. Rewriting, starting at the <code>2</code> in the nested expression above:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(-&gt; <span style="color:#ae81ff">2</span>
+  (* <span style="color:#ae81ff">3</span>)
+  (/ <span style="color:#ae81ff">4</span>)
+  (+ <span style="color:#ae81ff">1</span>)
+  (- <span style="color:#ae81ff">5</span>))
+</code></pre></div><p>The thread-first macro shown above <code>(-&gt;)</code> inserts the result of each expression as the first argument of the expression below it, then continues the process with the expressions below that one in turn.</p>
+
+
+
+
+
+  <h2 id="to-maybe-be-continued"><a class="anchor" href="#to-maybe-be-continued" title='Anchor for "To (maybe) be continued&hellip;".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> To (maybe) be continued&hellip;</h2> 
+
+<p>The slide deck (HTML) linked above is a more self-contained introduction that includes all of the information in this post.</p>
+
+
+
+    </article>
+  </main>
+
+
+    </div>
+    
+    <footer>
+      
+
+  &copy; 2021 Vinay Hiremath <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+<br><span class="small">Made with <a href="https://gohugo.io/">Hugo</a> and the <a href="https://themes.gohugo.io/hugo-theme-color-your-world/">Color Your World</a> theme.</span>
+<style>
+    span.small {
+    font-size: 0.7em;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="req-js">
+  <button class="outline-dashed" title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="#adjust"/></svg></button><input class="outline-dashed" type="color" list="presets" value="#225670" title="Change accent color." aria-label="Change accent color."><datalist id="presets"><option value="#225670"><option value="#dd587c"><option value="#1f676b"><option value="#f3a530"><option value="#902b37"><option value="#1dbc91"><option value="#754e85"><option value="#7fc121"><option value="#a8314a"><option value="#ff7433"><option value="#3e6728"><option value="#c063bd"></datalist>
+</section>
+
+
+
+  <noscript>
+    <p class="noscript">Unable to execute JavaScript. Some features were disabled.</p>
+  </noscript>
+
+
+
+    </footer>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+      <symbol viewBox="0 0 512 512" id="adjust">
+        <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/>
+      </symbol>
+      
+      
+      
+      
+  
+<symbol viewBox="0 0 448 512" id="hashtag">
+  <path d="M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z"/>
+</symbol>
+
+
+  <symbol viewBox="0 0 320 512" id="caret-down">
+    <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"/>
+  </symbol>
+
+
+      
+      
+      
+    </svg>
+
+    
+    
+    
+
+      <script>
+        
+          'use strict';const PALETTE=document.querySelector('footer input');PALETTE.onchange=function(){const PICK=PALETTE.value;SHEET.setProperty('--accent',PICK);if(ROOT.dataset.mode==='light'){localStorage.setItem('lightAccent',PICK)}else{localStorage.setItem('darkAccent',PICK)};updateAccent()};
+        
+      </script>
+
+    
+    
+    
+    
+
+  </body>
+</html>

@@ -1,3 +1,3 @@
 # vinayh.github.io
-* My personal webpage
+* Personal website generated using Hugo
 * Currently publicly viewable at https://vinayh.com

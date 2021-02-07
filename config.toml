@@ -1,0 +1,221 @@
+## Basic Configuration
+baseurl = "https://vinayh.com/"
+# relativeURLs = true
+languageCode = "en"
+
+publishDir = "docs"
+title = "Vinay Hiremath"
+theme = "color-your-world"
+# copyright = "&copy; 2021 Vinay Hiremath <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a>."
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+enableRobotsTXT = true
+[blackfriday] 
+plainIDAnchors = false
+
+enableEmoji = true
+enableInlineShortcodes = true
+
+paginate = 10
+
+## Site Settings
+[params]  
+  # Author
+  author    = "Vinay Hiremath"
+  # authorDesc  = "Test"
+  title     = "Vinay"
+  
+  # Site cover, for Open Graph, Twitter Cards and Schema.org
+  # It will be used if the current page doesn't have an image cover
+  # File will be picked from the "assets" directory
+  # Comment the lines if you don't want to use it
+  cover     = "img/vinay.png"
+  coverAlt  = "A placeholder that doesn't deserve to be described."
+  
+  # Shows a message in the footer about JavaScript being disabled
+  # The default is false
+  hasNoscriptNotice = true
+  
+  # Default path for images in posts
+  # ie.: "content/some-post/img"
+  # Can also be set PER PAGE
+  # It can be used to reduce repetition
+  # There's no default value
+  imgPath = "img"
+  
+  # Default classes for markup image 
+  # Modifies the default behavior of images placed via markdown
+  # Can also be set PER PAGE via front matter
+  # Available classes are: border and borderless
+  # There's no default value
+  markupImgClass = "borderless"
+  
+  # This will append a separator (of your choice) along the site title to your <title>
+  # ie.: | ❚ - – — • ⚫
+  # You can disabled it PER PAGE by using "disableTitleSeparator" at front
+  # matter or disable it entirely by commenting the line below
+  titleSeparator = "|"
+
+  [params.social.centralized]
+    facebook      = [ "vinay427" ]
+#   flickr        = [ "<username>" ]
+    github        = [ "vinayh" ]
+#   gitlab        = [ "<username>" ]
+    instagram     = [ "vinaythevegan" ]
+    keybase       = [ "vinayh" ]
+    linkedin      = [ "vinayahiremath" ]
+#   medium        = [ "<username>" ]
+#   reddit        = [ "<username>" ]
+#   snapchat      = [ "<username>" ]
+#   soundcloud    = [ "<username>" ]
+#   stackOverflow = [ "<username>" ]
+    strava        = [ "5225140" ]
+#   telegram      = [ "<username>" ]
+#   twitch        = [ "<username>" ]
+#   twitter       = [ "vinay427" ]
+#   vimeo         = [ "<username>" ]
+#   whatsapp      = [ "<number>" ]
+#   xing          = [ "<username>" ]
+#   youtube       = [ "<channelid>" ]
+  #entry         = [ "username", "label (optional)" ]
+  [params.social.decentralized]
+
+  # 404 page
+  [params.notFound]
+    title         = "Page not found"
+    description   = "This page was not found."
+    paragraph     = "Sorry, nothing to see here."
+
+  [params.style]
+    # Disable the use of system settings (prefers-color-scheme)
+    # Can be used as a workaround for Chrome on Linux
+    # (Issue 998903: Dark Gtk theme does not affect prefers-color-scheme media query)
+    # The default is false
+    ignoreSystemSettings = true
+
+    # Use an icon or text for footnote return links
+    # The default is false
+    hasIconAsFootnoteReturnLink = true
+
+    # For the social shortcode
+    # Use flexbox (with flex-grow) or grid (equal width)
+    # The default is false
+    socialIsFlex = true
+
+    # Keep anchor links hidden until it's focused/hovered
+    # They will always be visible in mobile devices, regardless the option
+    # The default is false
+    hideAnchors = true
+
+    # CSS animation transition when changing colors
+    # The default is ".5s ease"
+    changeTransition = ".3s ease"
+
+    # Dark mode as default
+    # User preferences (site/system settings) will still have priority over it
+    # The default is false
+    isDark = false
+
+    # Accent colors for light and dark mode respectively
+    lightAccent  = "#225670" # Default is "#225670"
+    darkAccent   = "#dd587c" # Default is "#dd587c"
+
+    # More colors, pick as many as you want (not really sure if there's a limit)
+    # Apparently these may not show up on every modern browser (ie.: Firefox)
+    # There's no default value. Used here just as example
+    presets = [ "#1f676b", "#f3a530", "#902b37", "#1dbc91", "#754e85", "#7fc121", "#a8314a", "#ff7433", "#3e6728", "#c063bd" ]
+
+
+  [params.imageProc]
+    # highRes   = [ "1280x", "1280w" ]
+    # mediumRes = [ "960x", "960w" ]
+    # lowRes    = [ "640x q90", "640w" ]
+    # entry = [ resize options, condition ]
+    
+    # Images with width equal or greater this value
+    # will be processed into the 3 resolutions above
+    # Valid only for images rendered via markdown
+    # The default value is 1280
+    # markupAutoResizeWidth = 1280
+
+
+#   [params.contact]
+  
+#     # formspree.io Form ID
+#     formspreeFormId = "example"
+    
+#     # Autocomplete [on/off] and min character length for message
+#     autoComplete      = false # Default is false
+#     messageMinLength  = 140   # Default is 140
+    
+#     # Subject
+#     # You can set a single value below (and it will cease to be a dropdown),
+#     # BUT KEEP IT AS AN ARRAY
+#     # It can also be disabled entirely (and it will turn into a text field)
+#     subject = [ 'Just saying "hi"', "I know what you did last winter", "... Is that a sloth?", "お前はもう死んでいる。" ]
+
+#     # Text placeholders. As usual, comment the lines if you don't want use them
+#     # The "subject" below will only be used if the "subject" above doesn't exist (ie.: commented/deleted)
+#     [params.contact.placeholder]
+#       name    = "Jane Doe"
+#       email   = "janedoe@example.com"
+#       subject = 'Just saying "hi"'
+#       message = "Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+
+
+## Main Menu
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    identifier = "home"
+    url = ""
+[[menu.main]]
+    name = "Posts"
+    weight = 2
+    identifier = "posts"
+    url = "posts"
+[[menu.main]]
+    name = "Tags"
+    weight = 3
+    identifier = "tags"
+    url = "tags"
+[[menu.main]]
+    name = "About Me"
+    weight = 4
+    identifier = "about"
+    url = "about"
+[[menu.main]]
+    name = "CV"
+    weight = 5
+    identifier = "cv"
+    url = "cv"
+# [[menu.main]]
+#     name = "Main site"
+#     weight = 40
+#     identifier = "main"
+#     url = "https://vinayh.com"
+
+
+#   [params.search]
+  
+#     # Enable search form (at the post list)
+#     # The default value is false
+#     enable = true
+  
+#     # Limit search results
+#     # The default value is 30
+#     maxResults = 15
+    
+#     # Limit seach field input and pattern matching
+#     minLength = 2   # Default is 3
+#     maxLength = 42  # Default is 32
+    
+#     # Optional placeholder for search field
+#     placeholder = "ie.: lorem ipsum"
+    
+#     # Stop word filter list
+#     # Can also be set PER PAGE via front matter
+#     # There's no default value
+#     stopWords = [ "a", "an", "and", "in", "the", "to", "was", "were", "with" ]

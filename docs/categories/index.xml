@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Hiremath</title>
+    <link>https://vinayh.com/categories/</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Jan 2021 03:41:38 +0100</lastBuildDate><atom:link href="https://vinayh.com/categories/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>post</title>
+        <link>https://vinayh.com/categories/post/</link>
+        <pubDate>Tue, 19 Jan 2021 03:41:38 +0100</pubDate>
+        
+        <guid>https://vinayh.com/categories/post/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>life</title>
+        <link>https://vinayh.com/categories/life/</link>
+        <pubDate>Fri, 14 Feb 2020 21:48:38 +0100</pubDate>
+        
+        <guid>https://vinayh.com/categories/life/</guid>
+        <description></description>
+      </item>
+    
+  </channel>
+</rss>

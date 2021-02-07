@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Hiremath</title>
+    <link>https://vinayh.com/tags/tech/</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 29 Aug 2020 11:09:24 +0200</lastBuildDate><atom:link href="https://vinayh.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Converting Audible books</title>
+        <link>https://vinayh.com/posts/audible/</link>
+        <pubDate>Sat, 29 Aug 2020 11:09:24 +0200</pubDate>
+        
+        <guid>https://vinayh.com/posts/audible/</guid>
+        <description>A very succinct guide on converting Audible&amp;rsquo;s proprietary .aax DRM audiobook format into .m4b and other standard formats playable on most any device.</description>
+      </item>
+    
+      <item>
+        <title>Clojure web dev</title>
+        <link>https://vinayh.com/posts/clojure-web-dev/</link>
+        <pubDate>Tue, 28 Jul 2015 17:02:35 -0400</pubDate>
+        
+        <guid>https://vinayh.com/posts/clojure-web-dev/</guid>
+        <description>A tutorial to get beginners to Clojure or web development acquainted with using Compojure and Heroku.</description>
+      </item>
+    
+      <item>
+        <title>Git hook for static sites hosted on S3</title>
+        <link>https://vinayh.com/posts/s3-git-hook/</link>
+        <pubDate>Tue, 28 Jul 2015 14:49:41 -0400</pubDate>
+        
+        <guid>https://vinayh.com/posts/s3-git-hook/</guid>
+        <description>A simple hook to sync a static site (generated, in this case) to AWS S3 with every Git push.</description>
+      </item>
+    
+  </channel>
+</rss>

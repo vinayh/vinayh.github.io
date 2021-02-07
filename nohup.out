@@ -1,0 +1,28 @@
+events.js:200
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:167:12
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:470:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+events.js:200
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:167:12
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:470:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+(node:5456) DeprecationWarning: file property is deprecated and will be removed in v5.
+(node:5456) DeprecationWarning: init() is deprecated and will be removed in v5.
+(node:5542) DeprecationWarning: file property is deprecated and will be removed in v5.
+(node:5542) DeprecationWarning: init() is deprecated and will be removed in v5.
