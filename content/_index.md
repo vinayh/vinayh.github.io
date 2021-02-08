@@ -8,3 +8,5 @@ I'm currently a computational neuroscience master's student. My primary research
 Feel free to browse my [blog posts](/posts) to read about some of my recent thoughts.
 
 You can also enable/disable dark mode or pick a different accent color in the footer.
+
+{{< latest-posts >}}

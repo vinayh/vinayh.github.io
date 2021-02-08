@@ -1,6 +1,7 @@
 ---
 title: "Converting Audible books"
 date: 2020-08-29T11:09:24+02:00
+categories: [ "post" ]
 draft: false
 summary: "A very succinct guide on converting Audible's proprietary .aax DRM audiobook format into .m4b and other standard formats playable on most any device."
 tags: ["tech"]

@@ -6,7 +6,17 @@
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Jan 2021 03:41:38 +0100</lastBuildDate><atom:link href="https://vinayh.com/categories/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 23:23:15 +0100</lastBuildDate><atom:link href="https://vinayh.com/categories/post/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Book: Submission</title>
+        <link>https://vinayh.com/posts/2021-02-07/</link>
+        <pubDate>Sun, 07 Feb 2021 23:23:15 +0100</pubDate>
+        
+        <guid>https://vinayh.com/posts/2021-02-07/</guid>
+        <description>This is a review of Submission (originally Soumission in French), written by Michel Houellebecq and translated by Lorin Stein. I originally wrote this review on May 2, 2020 immediately after reading the book, when it was posted to Goodreads.
+First of all, I think this book was surprisingly captivating, almost always readable despite a bit of slow going through some of the passages filled with names in French literature I was unfamiliar with.</description>
+      </item>
+    
       <item>
         <title>Lost in translation</title>
         <link>https://vinayh.com/posts/2021-01-19/</link>
@@ -14,6 +24,15 @@
         
         <guid>https://vinayh.com/posts/2021-01-19/</guid>
         <description>I sometimes feel like Santiago in &lt;em&gt;The Alchemist&lt;/em&gt; by Paulo Coelho, or at least a version of him that hasn&amp;rsquo;t quite made it to the ending and perhaps never does.</description>
+      </item>
+    
+      <item>
+        <title>Converting Audible books</title>
+        <link>https://vinayh.com/posts/audible/</link>
+        <pubDate>Sat, 29 Aug 2020 11:09:24 +0200</pubDate>
+        
+        <guid>https://vinayh.com/posts/audible/</guid>
+        <description>A very succinct guide on converting Audible&amp;rsquo;s proprietary .aax DRM audiobook format into .m4b and other standard formats playable on most any device.</description>
       </item>
     
       <item>
@@ -122,6 +141,33 @@
         
         <guid>https://vinayh.com/posts/2020-03-22/</guid>
         <description>I started this daily notes sub-blog to have a more frictionless way to post daily thoughts without the commitment of composing a full blog post.</description>
+      </item>
+    
+      <item>
+        <title>Belonging</title>
+        <link>https://vinayh.com/posts/belonging/</link>
+        <pubDate>Fri, 14 Feb 2020 21:48:38 +0100</pubDate>
+        
+        <guid>https://vinayh.com/posts/belonging/</guid>
+        <description>Taking a moment to reflect on the value of feeling like you belong and are accepted for who you are.</description>
+      </item>
+    
+      <item>
+        <title>Clojure web server tutorial</title>
+        <link>https://vinayh.com/posts/clojure-web-dev/</link>
+        <pubDate>Tue, 28 Jul 2015 17:02:35 -0400</pubDate>
+        
+        <guid>https://vinayh.com/posts/clojure-web-dev/</guid>
+        <description>A tutorial to get beginners to Clojure or web development acquainted with using Compojure and Heroku.</description>
+      </item>
+    
+      <item>
+        <title>Git hook for static sites hosted on S3</title>
+        <link>https://vinayh.com/posts/s3-git-hook/</link>
+        <pubDate>Tue, 28 Jul 2015 14:49:41 -0400</pubDate>
+        
+        <guid>https://vinayh.com/posts/s3-git-hook/</guid>
+        <description>A simple hook to sync a static site (generated, in this case) to AWS S3 with every Git push.</description>
       </item>
     
   </channel>

@@ -1,5 +1,6 @@
 +++
 tags = ["tech"]
+categories = [ "post" ]
 date = "2015-07-28T17:02:35-04:00"
 lastmod = "2019-10-12"
 summary = "A tutorial to get beginners to Clojure or web development acquainted with using Compojure and Heroku."

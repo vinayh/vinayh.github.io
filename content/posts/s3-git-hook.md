@@ -1,5 +1,6 @@
 +++
 tags = ["tech"]
+categories = [ "post" ]
 date = "2015-07-28T14:49:41-04:00"
 summary = "A simple hook to sync a static site (generated, in this case) to AWS S3 with every Git push."
 keywords = []
