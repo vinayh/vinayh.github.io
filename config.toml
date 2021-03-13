@@ -26,7 +26,7 @@ paginate = 10
   author    = "Vinay Hiremath"
   # authorDesc  = "Test"
   title     = "Vinay"
-  
+
   # Site cover, for Open Graph, Twitter Cards and Schema.org
   # It will be used if the current page doesn't have an image cover
   # File will be picked from the "assets" directory

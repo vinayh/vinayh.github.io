@@ -3,7 +3,7 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.80.0">
+<meta name="generator" content="Hugo 0.81.0">
 <meta name="theme" content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
 
 
@@ -425,7 +425,7 @@
 
 
 
-<link rel="stylesheet" href="/css/main.min.94583b375b1ec3b702a2914c4dfd825ea4f10e186fd0de7a793a086298f33e4675dd9e3b23745f17f6484e0f15450e007b00a314fdcf11bcbfafdcd15da84033.css" integrity="sha512-lFg7N1sew7cCopFMTf2CXqTxDhhv0N56eToIYpjzPkZ13Z47I3RfF/ZITg8VRQ4AewCjFP3PEby/r9zRXahAMw==">
+<link rel="stylesheet" href="/css/main.min.4ccbc274a0f10944cd5fe38ecfdd7f6a5bcc8c28a8f6ca96071ec4c73950b7ad8ad3eb7ff0689da6fef6de6ebeb17e33ea2207b6da568814e19d3e3bbbea0b33.css" integrity="sha512-TMvCdKDxCUTNX&#43;OOz91/alvMjCio9sqWBx7ExzlQt62K0&#43;t/8Gidpv723m6&#43;sX4z6iIHttpWiBThnT47u&#43;oLMw==">
 
 
 
@@ -511,11 +511,7 @@
 
   <script>
     
-      'use strict';const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()};function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
-}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
-}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
-}else{setLight();localStorage.setItem('isDark','false')
-};updateAccent()};document.querySelector('footer button').addEventListener('click',userModeChange)})
+      'use strict';const ROOT=document.documentElement,SHEET=document.documentElement.style,META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'}function setLight(){ROOT.dataset.mode='light'}localStorage.getItem('isDark')=='true'?setDark():localStorage.getItem('isDark')=='false'&&setLight(),function getAccent(){var a;return ROOT.dataset.mode==='dark'?localStorage.getItem('darkAccent')===null?(SHEET.setProperty('--accent',activeAccent),META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var a=getAccent();SHEET.setProperty('--accent',a),PALETTE.value=a,META_THEME_COLOR.setAttribute('content',a)}document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function a(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'}function b(){a(),ROOT.dataset.mode=='light'?(setDark(),localStorage.setItem('isDark','true'),console.log("Mode changed to 'dark' by the user.")):(setLight(),localStorage.setItem('isDark','false'),console.log("Mode changed to 'light' by the user.")),updateAccent()}document.querySelector('footer button').addEventListener('click',b)})
     
   </script>
 
@@ -838,7 +834,7 @@
 
       <script>
         
-          'use strict';const PALETTE=document.querySelector('footer input');PALETTE.onchange=function(){const PICK=PALETTE.value;SHEET.setProperty('--accent',PICK);if(ROOT.dataset.mode==='light'){localStorage.setItem('lightAccent',PICK)}else{localStorage.setItem('darkAccent',PICK)};updateAccent()};
+          'use strict';const PALETTE=document.querySelector('footer input');PALETTE.onchange=function(){const a=PALETTE.value;SHEET.setProperty('--accent',a),ROOT.dataset.mode==='light'?localStorage.setItem('lightAccent',a):localStorage.setItem('darkAccent',a),updateAccent()}
         
       </script>
 
